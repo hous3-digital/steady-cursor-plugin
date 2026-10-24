@@ -1,0 +1,15 @@
+---
+description: How to use Steady pentest, finding, and report data. Apply when the user mentions Steady, a pentest, a finding, retest, remediation, or a Steady report.
+alwaysApply: false
+---
+
+steady:
+
+Steady is the source of truth for pentests and findings. Read it with the Steady MCP tools before answering. The tools are `list_pentests`, `get_pentest`, `list_findings`, `get_finding`, `get_report`, and `add_comment`.
+
+- Quote codes, labels, counts, and deadlines from the tool response. If a field is missing or null, say it is missing. Do not fill gaps with a typical pentest write-up.
+- Show people the product labels (`stageLabel`, `situation`, `severityLabel`, `statusLabel`, `deadlineLabel`). Keep the raw enums (`phase`, `severity`, `status`) for filters and follow-up calls.
+- Pentest codes look like `PT-003`. Finding codes look like `F-001`. Pass the code the API returned; do not invent the next number.
+- Evidence with `masked: true` stays masked. Do not infer, reconstruct, or ask the user to paste the hidden content.
+- `add_comment` is the only write. Call it only after the user has explicitly asked to post that comment on that finding, and only when `allowedActions` includes `comment`. Other actions in `allowedActions` happen in the Steady app; do not claim they were done from Cursor.
+- A report from `get_report` is metadata. Do not claim you read the PDF.
