@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "hous3",
+  "description": "Hous3 plugins for Steady pentests, findings, and reports.",
+  "owner": {
+    "name": "Hous3",
+    "url": "https://app.estady.com.br"
+  },
+  "plugins": [
+    {
+      "name": "steady",
+      "description": "Work with Steady pentests, findings, and reports.",
+      "source": "./",
+      "homepage": "https://app.estady.com.br"
+    }
+  ]
+}
