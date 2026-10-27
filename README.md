@@ -4,8 +4,10 @@ Work with [Steady](https://app.estady.com.br) pentests, findings, and reports fr
 
 ## What you get
 
-- **MCP connection** to `https://app.estady.com.br/api/mcp`.
+- **MCP connection** `steady` to `https://app.estady.com.br/api/mcp`. Consulta, relatório e comentário continuam aqui.
+- **MCP connection** `triage` to `${STEADY_ORIGIN}/api/mcp/cursor-triage`. Só a triagem usa este endereço. Defina `STEADY_ORIGIN` sem barra no final (`https://app.estady.com.br` ou `http://localhost:3000`).
 - **Skill** `steady` — engagements, findings, comments, and report metadata.
+- **Skill** `triage` — triagem grátis pela base publicada e, depois de conectar a organização neste servidor, a fila real da conta. Não comenta e não grava achado.
 - **Commands**: `/steady-status`, `/steady-findings`, `/steady-finding`, `/steady-comment`, `/steady-report`.
 - **Cursor rule** that keeps answers tied to tool responses: no invented findings, masked evidence stays masked, and comments are posted only when asked. Claude Code gets the same limits from the skill.
 

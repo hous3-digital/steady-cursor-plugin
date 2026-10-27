@@ -1,15 +1,30 @@
 {
   "name": "steady",
   "displayName": "Steady",
-  "version": "0.1.1",
-  "description": "Work with Steady pentests, findings, and reports from Cursor.",
+  "version": "0.1.2",
+  "description": "Work with Steady pentests, findings, and reports from Cursor. Triage a described finding for free, then read the organization's queue after it connects.",
   "author": {
     "name": "Hous3"
   },
   "publisher": "Hous3",
   "homepage": "https://app.estady.com.br",
   "repository": "https://github.com/hous3-digital/steady-cursor-plugin",
-  "keywords": ["steady", "pentest", "findings", "security", "mcp"],
+  "keywords": [
+    "steady",
+    "pentest",
+    "findings",
+    "security",
+    "mcp",
+    "triage"
+  ],
+  "variables": {
+    "STEADY_ORIGIN": {
+      "title": "Endereço da Steady",
+      "description": "Endereço da Steady, sem barra no final. Produção: https://app.estady.com.br. Laptop: http://localhost:3000.",
+      "type": "string",
+      "required": true
+    }
+  },
   "category": "security",
   "logo": "assets/logo.svg"
 }
