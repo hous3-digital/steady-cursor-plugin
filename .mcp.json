@@ -1,0 +1,6 @@
+{
+  "steady": {
+    "type": "http",
+    "url": "https://app.estady.com.br/api/mcp"
+  }
+}
