@@ -1,7 +1,7 @@
 {
   "name": "steady",
   "displayName": "Steady",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Work with Steady pentests, findings, and reports from Claude Code.",
   "author": {
     "name": "Hous3",
@@ -10,5 +10,5 @@
   "homepage": "https://app.estady.com.br",
   "repository": "https://github.com/hous3-digital/steady-cursor-plugin",
   "keywords": ["steady", "pentest", "findings", "security", "mcp"],
-  "icon": "./assets/logo.svg"
+  "icon": "./assets/logo.png"
 }
