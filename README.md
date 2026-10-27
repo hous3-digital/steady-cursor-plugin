@@ -31,6 +31,8 @@ claude --plugin-dir .
 
 Check the manifest with `claude plugin validate .`
 
+In Claude Desktop, **Customize → Plugins → Add → Add marketplace** and enter `hous3-digital/steady-cursor-plugin`. That flow reads `.claude-plugin/marketplace.json` on the repository’s default branch, then lists the Steady plugin. **Upload plugin** is the other path: it takes a zip and does not use the marketplace file.
+
 ## Using it
 
 ```
