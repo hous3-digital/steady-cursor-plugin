@@ -4,7 +4,7 @@
       "url": "https://app.estady.com.br/api/mcp"
     },
     "triage": {
-      "url": "${STEADY_ORIGIN}/api/mcp/cursor-triage"
+      "url": "https://app.estady.com.br/api/mcp/cursor-triage"
     }
   }
 }
